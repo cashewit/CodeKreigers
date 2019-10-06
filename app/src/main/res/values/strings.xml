@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Code Kreigers</string>
+    <string name="main">Play</string>
+    <string name="card1">
+        #include "stdio.h"\n
+        int main()\n
+        {\n
+            \tint number, originalNumber, remainder, result = 0;\n
+            \tprintf("Enter a three digit integer: ");\n
+            \tscanf("%d", number);\n
+            \toriginalNumber = number;\n
+            while (originalNumber != 0)\n
+            {\n
+                remainder = originalNumber%10;\n
+                result += remainder*remainder*remainder;\n
+                originalNumber /= 10;\n
+            }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+            if(result == number)\n
+                printf("%d is an Armstrong number.",number);\n
+            else\n
+                printf("%d is not an Armstrong number.",number);\n
+            return 0;\n
+        }\n
+    </string>
+
+    <string name="attempts">Incorrect Username or Password!</string>
+    <string name="welcome1">Welcome to\nCode Kreigers!</string>
+    <string name="welcome2">Enter your\nnames below</string>
+    <string name="teamMemberName1">Team Member 1</string>
+    <string name="teamMemberName2">Team Member 2</string>
+    <string name="submit">Submit</string>
+</resources>
