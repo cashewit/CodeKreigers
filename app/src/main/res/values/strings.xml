@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Code Kreigers</string>
-    <string name="main">Play</string>
+    <string name="app_name">Code Kriegers</string>
+
     <string name="card1">
         #include "stdio.h"\n
         int main()\n
@@ -23,10 +23,45 @@
         }\n
     </string>
 
+    <!-- Common Strings -->
+    <string name="main">Play</string>
     <string name="attempts">Incorrect Username or Password!</string>
     <string name="welcome1">Welcome to\nCode Kreigers!</string>
     <string name="welcome2">Enter your\nnames below</string>
     <string name="teamMemberName1">Team Member 1</string>
     <string name="teamMemberName2">Team Member 2</string>
     <string name="submit">Submit</string>
+    <!-- Common Strings End -->
+
+    <!-- Instruction Part -->
+    <string name="slide1">
+        The questions are in the form of code snippets of C language.
+        Each code snippet will give you instructions that will help you in
+        traversing the path that leads you from one checkpoint to another.
+    </string>
+
+    <string name="slide2">
+        When you reach the checkpoint[HOPEFULLY:)] you will see a QR CODE,
+        click on the submit button at the end of question that
+        will take you to a screen where you have to scan the QR CODE.
+    </string>
+
+    <string name="slide3">
+        If the checkpoint is correct the QR CODE will be scanned successfully
+        and you will next see a dialog box where you have to answer the question asked at the end of code.
+    </string>
+
+    <string name="instruct_button">Close</string>
+    <!-- Instruction Part Ends -->
+
+    <!-- Navigation Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_instructions">Instructions</string>
+    <string name="menu_team">Team Vision</string>
+    <string name="menu_checkpoint">Checkpoints</string>
+    <string name="menu_devs">Developers</string>
+    <string name="menu_feedback">Feedback</string>
+    <!-- Navigation Menu Ends -->
+
 </resources>

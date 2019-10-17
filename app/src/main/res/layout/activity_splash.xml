@@ -13,7 +13,7 @@
         android:layout_height="225dp"
         android:background="@drawable/backgroundimage"
         android:maxWidth="50dp"
-        android:src="@mipmap/mytemplogo"
+        android:src="@drawable/ck_logo"
         app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="parent"

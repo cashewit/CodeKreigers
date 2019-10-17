@@ -7,18 +7,14 @@
     android:background="@color/black"
     tools:context=".EnterName">
 
-    <TextView
-        android:id="@+id/welcomeText"
+    <ImageView
+        android:id="@+id/ck_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/welcome1"
-        android:textColor="@color/green"
-        android:fontFamily="@font/press_start_2p"
-        android:textAlignment="center"
-        android:textSize="35sp"
+        android:src="@drawable/ck_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,19 +25,16 @@
         android:id="@+id/enterDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/press_start_2p"
         android:text="@string/welcome2"
         android:textAlignment="center"
         android:textColor="@color/green"
-        android:textSize="18sp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ck_logo"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/ck_logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <EditText
         android:id="@+id/teamMember1"
@@ -52,14 +45,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:textColor="@color/yellow"
         android:hint="@string/teamMemberName1"
         android:inputType="textPersonName"
+        android:textColor="@color/yellow"
         android:textColorHint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
 
     <EditText
         android:id="@+id/teamMember2"
@@ -69,16 +63,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:textColorHint="@color/green"
         android:ems="10"
-        android:textColor="@color/yellow"
-        android:inputType="textPersonName"
         android:hint="@string/teamMemberName2"
+        android:inputType="textPersonName"
+        android:textColor="@color/yellow"
+        android:textColorHint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.612" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/enterButton"
@@ -89,14 +83,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/black"
-        android:textColor="@color/green"
         android:fontFamily="@font/press_start_2p"
-
         android:text="Enter"
+
+        android:textColor="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.89" />
 </android.support.constraint.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.codekreigers;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.method.ScrollingMovementMethod;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -16,6 +18,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
 
     private List<Questions> questionList;
     private Context mContext;
+    public boolean isClickable = true;
 
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -35,7 +38,22 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
 
         @Override
         public void onClick(View v) {
-            StartGame.getInstance().prepareQuestionData();
+            int position = (int) mySubmitButton.getTag();
+
+
+            //Toast.makeText(StartGame.getInstance(),"Position is: " +position,Toast.LENGTH_SHORT).show();
+            if(questionList.get(position).isAnswered()){
+                Toast.makeText(StartGame.getInstance(),"Already answered!",Toast.LENGTH_SHORT).show();
+                return;
+            }
+            SharedPreferences listRegeneration = StartGame.getInstance().getSharedPreferences("listRegeneration",Context.MODE_PRIVATE);
+            int questionCount = listRegeneration.getInt("LastElement",1);
+            StartGame.getInstance().prepareQuestionData(questionCount,false);
+            questionList.get(position).setAnswered(true);
+
+            SharedPreferences.Editor myEditor2 = listRegeneration.edit();
+            myEditor2.putInt("LastElement",questionList.size());
+            myEditor2.apply();
         }
     }
 
@@ -47,7 +65,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view,parent,false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.question_card_view,parent,false);
         return new MyViewHolder(itemView);
     }
 
@@ -55,6 +73,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int position) {
         Questions question = questionList.get(position);
         myViewHolder.questionDisplay.setText(question.getQuestion());
+        myViewHolder.mySubmitButton.setTag(position);
     }
 
     @Override
