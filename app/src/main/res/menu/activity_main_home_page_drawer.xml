@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@drawable/ic_play_circle_filled_black_24dp"
+            android:title="@string/menu_play" />
+        <item
+            android:id="@+id/nav_instructions"
+            android:icon="@drawable/ic_instructions"
+            android:title="@string/menu_instructions" />
+        <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="@string/menu_team" />
+
+        <item
+            android:id="@+id/nav_checkpoints"
+            android:icon="@drawable/ic_checkpoints"
+            android:title="@string/menu_checkpoint" />
+    </group>
+
+    <item android:title=""/>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_devs"
+                android:icon="@drawable/ic_developer_mode_black_24dp"
+                android:title="@string/menu_devs" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title= "@string/menu_feedback" />
+        </menu>
+    </item>
+
+</menu>
