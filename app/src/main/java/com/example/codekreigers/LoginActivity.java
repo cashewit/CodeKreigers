@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     public EditText usernameInput;
     private EditText passwordInput;
     private Button loginButton;
-    private String control = "1234";
+    private String control = "hello_Vision";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Username and Password required!", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    validate(passwordInput.getText().toString());
+                    validate(usernameInput.getText().toString(), passwordInput.getText().toString());
                     passwordInput.getText().clear();
                 }
             }
@@ -45,21 +45,21 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void validate(String password)
+    private void validate(String username, String password)
     {
-        if(control.equals(password)){
-            SharedPreferences loginPref = getSharedPreferences("loginPref",MODE_PRIVATE);
-            SharedPreferences.Editor myEditor = loginPref.edit();
-            myEditor.putBoolean("myLoginBool",false);
+        if(username.matches("CK@[1-9][0-9][0-9]") && control.equals(password)){
+            SharedPreferences userCKid = getSharedPreferences("userCkid",MODE_PRIVATE);
+            SharedPreferences.Editor myEditor = userCKid.edit();
+            myEditor.putInt("CKid",Integer.parseInt(username.substring(3)));
             myEditor.apply();
 
             passwordInput.getText().clear();
-            Intent myIntent = new Intent(LoginActivity.this, StartGame.class);
-            startActivity(myIntent);
+            Intent myIntent1 = new Intent(LoginActivity.this,InstructionMainActivity.class);
+            startActivity(myIntent1);
             finish();
         }
         else{
-            Toast.makeText(this, "Incorrect Password!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrect CK ID or Password!", Toast.LENGTH_SHORT).show();
             return;
         }
     }

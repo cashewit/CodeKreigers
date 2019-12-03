@@ -1,28 +1,6 @@
 <resources>
     <string name="app_name">Code Kriegers</string>
 
-    <string name="card1">
-        #include "stdio.h"\n
-        int main()\n
-        {\n
-            \tint number, originalNumber, remainder, result = 0;\n
-            \tprintf("Enter a three digit integer: ");\n
-            \tscanf("%d", number);\n
-            \toriginalNumber = number;\n
-            while (originalNumber != 0)\n
-            {\n
-                remainder = originalNumber%10;\n
-                result += remainder*remainder*remainder;\n
-                originalNumber /= 10;\n
-            }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-            if(result == number)\n
-                printf("%d is an Armstrong number.",number);\n
-            else\n
-                printf("%d is not an Armstrong number.",number);\n
-            return 0;\n
-        }\n
-    </string>
-
     <!-- Common Strings -->
     <string name="main">Play</string>
     <string name="attempts">Incorrect Username or Password!</string>
@@ -63,5 +41,704 @@
     <string name="menu_devs">Developers</string>
     <string name="menu_feedback">Feedback</string>
     <!-- Navigation Menu Ends -->
+
+    <!-- Team Vision -->
+    <string name="final_year">1.Siddhi Jain\n2.Nayan Singhai\n3.Ishan Diwedi</string>
+    <string name="pre_final_year">1.Vipul Sharma\n2.Arun Vishwakarma\n3.Drishti Beohar\n4.Ayesha Rashid\n5.Mayank Patel\n6.Ammar Alavi</string>
+    <string name="second_year">1.Abhishek Tiwari\n2.Aditya Bhandari\n3.Guru Vishnu\n5.Jonathan Dabreo\n.6.Karandeep Singh\n7.Kunal Juneja\n8.Neha Parmar\n9.Nikita Chauhan\n10.Prakriti Shrivastava\n11.Rishika Patel\n12.Sapna Yadav\n13.Shubham Sharma\n14.Tushar Amrit\n15.Har
+shvardhan Kaushik\n16.Pushpak Manwani
+</string>
+    <!-- Team Vision Ends -->
+
+    <!-- Checkpoint List -->
+    <string name="checkpoint1">Rolta</string>
+    <string name="checkpoint2">Nescafe(SAC)</string>
+    <string name="checkpoint3">Chemistry Lab</string>
+    <string name="checkpoint4">G9</string>
+    <string name="checkpoint5">EEOAT</string>
+    <string name="checkpoint6">Mario</string>
+    <string name="checkpoint7">G6</string>
+    <string name="checkpoint8">NTB</string>
+    <string name="checkpoint9">Amul</string>
+    <string name="checkpoint10">Train</string>
+    <string name="checkpoint11">ED Hall</string>
+    <string name="checkpoint12">Archi. Department</string>
+    <string name="checkpoint13">Mech. Department</string>
+    <string name="checkpoint14">SBI ATM</string>
+    <string name="checkpoint15">Director\'s Office</string>
+    <!-- Checkpoint List Ends -->
+
+    <!-- Questions List -->
+    <string name="path1_question1">
+        string s="dragon”; \n
+int q=0; \n
+if(found(s)) \n
+{ \n
+q=count (number of prime numbers visible); \n
+turn.anticlockwise((q+3)*30))° ; \n
+} \n
+if(found narrow path) \n             //walking to the narrow path by the side of atm\n
+	printf(“You have reached the next level”); \n
+else continue walking forward; \n
+x=3 ups \n
+while(! climbed x) \n
+	walk straight \n
+int a=b=c=0; \n
+while(found(“Carrier”)) \n
+{ a++; \n
+} \n
+If(find(well)==true) \n
+{   \n
+if(check(isWaterPresent())) \n
+{ \n
+count(number of windows open); \n
+} \n
+else \n
+{ \n
+moveToCentreStage(); \n
+takeSelfieWith(“Clark Joseph Kent”); \n
+} \n
+while(found(“Men In Black”)) \n
+{  \n
+b++; \n
+} \n
+} \n
+String g=”Mai nikla _______ leke”; \n
+findGraffiti(g); \n
+while(found(“Iconic Bollywood Dialogues”))  \n
+{  \n
+c++; \n
+} \n
+Move out of the gate next to it \n
+
+w=mera joota hai japaani \n
+while(! found(Hindustani)) \n
+	find(Hindustani) \n
+x=Mario \n
+Search_for(x) \n
+While(!found(x’s love)) \n
+	Walk \n
+Take selfie with her \n
+Enter(a+b+c) \n //in app
+
+    </string>
+
+    <string name="path2_question1">
+        if( ! Facing MANIT\’s SBI BANK)\n  Reposition yourself and face its front door; \n
+if (Facing MANIT\’s SBI  BANK Door)\n
+Take a right turn ;\n
+Look around till Banyan tree in sight; \n
+while(! Reached a big banyan tree with indian flag colors)\n
+Continue walking; \n
+ \n
+If ( Facing banyan tree) \n
+hurdlecount = Number of vehicle hurdles right behind the tree;\n
+\nTurn left; \n
+ x=firedragondartboard(hurdlecount)+3;\n
+  numg= total number of \‘G\’ \’s in the dragonfire dartboard; \n
+
+If ( facing firedragondartboard)\n
+   Turn 180 degrees to the left;\n
+ \n
+guess1= “Dekho ek dakiya aaya, thaila ek haath mai laya, pehne hai wo khakhi kapde, chitthi \nkai hath mai pakde. (where is “chitthi” posted ?)”; \n
+
+While ( ! guess1 found)\n
+  Walk straight and look around; \n
+
+If ( guess1 found)  Search ( 24 hour clock time on guess 1) // A time in 24 hour format.\n   storetime1=24 hour clock time on guess 1; \n
+  storetime=int(storetime1);   \n
+findme=(((storetime/4)*10)+5)*2;  \n
+   If ( facing guess1)  Turn (findme) degrees right; \n
+While ( ! first AC is encountered) {\n
+ Windowcount= Number of windows on the left ;  \n
+Keep \n
+walking straight;\n
+ } \n
+
+
+If ( First AC is Encountered ) \n
+ acencounternumber= A Number on AC of format “ A.BC”;  \n
+finalac= int(acencounternumber);   \n
+
+If ( facing AC )  Turn (2*findme) degrees to the right and walk straight  Search ( minions on \nwall )  minionnumber= Number of minions on wall; \n
+
+If ( Facing minions on wall)  \n
+Turn ((((int(acencounternumber)*2)*minionnumber)+10) degrees left;\n
+
+ Search ( A QR code around an electronic banking outlet )  // Hint : gyrate around that \nestablishment. \n
+
+Q: Enter the Value of ( x - finalac) .\n
+
+    </string>
+
+    <string name="path3_question1">
+        if(!Facing Banyan Tree)\n
+Face_Banyan_Tree_Such_That_Nescafe_is_on_your_right_side;\n
+Else\n
+Find_a_Dancing_girl_who_will_show_you_path;\n
+
+intcount_of_trees=0;\n
+while(count_of_trees!=square_of(even_prime_number))\n
+{\n
+if(tree_on_right_side)\n
+count_of_trees++;\n
+}\n
+\n
+what_to_do=TURN_LEFT;\n
+\n
+start_pos=current_pos;	//pos is position\n
+\n
+while(!(NESnessenCAcacaFE))\n
+walk++;\n
+\n
+if(hungry)\n
+eat_something;\n
+else\n
+  {\n
+make_your_displacement=0;\n
+  }\n
+\n
+str="21 SAVAGE";\n
+find(str)\n
+\n
+if(str_is_found){\n
+	you_know_where_to_go;\n
+        cross_the_gate;\n
+        if(gate == closed)\n
+        search(alternate_path)\n
+        //Alternate path: Admin -> path_btw_Maulana_Azad_and_anti-ragging_board -> left_from_department_of_electrical_eng_board\n\n
+        //Walk striaght_until_bridge_on_left &amp;&amp; plantation_on_right\n
+        //Take_left_and_find_the_gate_you_were_supposed_to_find\n
+        }\n\n
+else\n
+	find(str) and repeat;\n
+
+count=number_of_celebrities_on_wallon left;\n
+
+if(count)\n
+{\n
+	move_straight_your_train_is_about_to_leave;\n
+}\n
+Question:What is the value of count?\n
+
+    </string>
+
+    <string name="path1_question2">
+        \tWalk opposite to Human Evolution \n
+\tint count=2; \n
+for(i=Ironman;i &lt; Shaktimaan ;i++) \n
+{ \n
+if(i!=avenger) \n
+count++; \n
+} \n
+Goto: “The Taste of India” \n
+Enter(count)\n //in app
+
+    </string>
+
+    <string name="path2_question2">
+         If ( Facing QR Code )   \n
+While ( ! robot spotted)    \n
+Turn 90 degrees to right and search for a big robot    \n
+If ( robot spotted)   \n
+ robot_player_distance = Your Distance till robot;  \n
+ While (  ! (robot_player_distance) / 2 )     Keep walking; \n
+
+If ( you dare )  Jump through the fence twice and enter the building nearby; \n
+Else   Find an appropriate way to enter the building; \n
+
+If ( in Building)  extingush_count=0; \n
+  Search ( TV on wall ) \n
+  If ( Facing tv )    Turn left;    \n
+While ( ! 69 found behind an extinguisher) // a sole number 69 which is circled and written in\n black        {\n
+Walk straight and inspect every extinguisher which appears on the left in path thoroughly; \n
+        extguish_count++\n
+} \n
+
+If ( 69 found on extinguisher) \n
+ while (  ! you reach ((extguish_count+ 2)th extinguisher)  )  \n
+  Keep walking; \n
+
+If ( Facing ((extgush_count+ 2)th extinguisher ) ) \n
+ Turn 180 degrees to the right;  \n
+ Search ( stairs) \n
+   Go upstairs;\n
+
+Turn left; \n
+upfloorextingush_count= Count of extinguisher on left side ( of upper floor ); \n
+While ( !uprfloorextinguish_count=4)  { \n
+Walk straight \n
+} \n
+Search ( for the best and most elegant office at NIT Bhopal) // (The controller of MANIT) \n
+
+exponentialminions= minionnumber*minionnumber; \n
+
+Scan the QR CODE  \n
+
+Q: Enter the value of exponentialminions;
+
+    </string>
+
+    <string name="path3_question2">
+        Find antenna;\n
+Move in the direction antenna is showing;\n
+Search for  an inverted bowl;\n
+int r;\n
+if(Found)\n
+{\n
+Stand in such a way that the bowl is at your back;\n
+if(done){\n
+turn 180°;\n
+calculate  r as Radius of first inverted bowl you encountered;\n
+}\n
+}\n
+String s; // whenever buying a ticket ,you go to…s..\n
+int c;\n
+while(earth==inclined){\n
+goto s;\n
+c=No of Number of Silver coloured vertical Bars on both side of the inclined plane;\n
+}\n
+int d=sqrt((c/2)-1)*3;\n
+if(! Facing \'d\'th Fibonacci number counter)\n
+{\n
+face(\'d\'th Fibonacci  number counter+ 7);\n
+}\n
+else if(Facing \'d\'th Fibonacci number counter)\n
+{\n
+Turn 90 ° in a anticlockwise direction ;\n
+}\n
+\n
+Go straight till you hit a wall with AC; \n
+Again turn left; \n
+int steps=0; \n
+while(!encountered rooms on left side &amp;&amp; steps &lt;90) {\n
+steps++;    \n
+}\n
+Turn left;\n
+Move; \n
+Search for a person lost in his art with red feet;\n
+\n
+int f;\n
+if( Found)\n
+{\n
+Move straight;\n
+if(Disc like Floral print seen){\n
+stop;\n
+ f= Count Number of disc like_Flowers on it ;\n
+}\n
+}\n
+string q;//q is the word which fills the following sentence:- Harry Potter can speak__ ‘s tongue.\n
+Move to q;\n
+Since you must be tired by now. So go to a museum to have some peace.\n
+if(reached){\n
+Turn Right side;\n
+If(Want to cross this path?){\n
+Find bridge;\n\n
+Hint:A structure carrying a road , path ,railway ,etc. across a river , road or any other obstacle like codekriegers.\n
+}\n
+Move on a path which have a plantation dated 06-JAN-2018 till you get the other end; \n
+if(date foundand facing the date)\n
+{\n
+Turn right;\n
+}\n
+if(Done)\n
+{\n
+Move forward ;\n
+}\n
+goto Library;\n
+turn 180°;\n
+walk straight;\n
+stop when G4 encountered on left ;\n
+If (facing G4) \n
+Turn 180°;\n
+Find Rajinikanth;\n
+Search in google for the latest movie of Rajinikanth;\n
+if(Rajanikanth Found or Joker Found )\n
+{\n
+Clap twice;\n
+Goto its backside;\n
+}\n
+else {\n
+search for a train;\n
+Go to its backside; \n
+ }\n\n
+Question :What is the value of c?\n
+
+    </string>
+
+    <string name="path1_question3">
+        until(hungry) \n
+	have refreshments \n
+int x=prev_ans++; \n
+open(compass); \n
+move(Southwards,(x0)metres); \n
+take(left) ; \n
+int k=0; \n
+do{
+	if(found(lamp-post)) \n
+{ \n
+k++; \n
+} \n
+}while(!lamp-post on right) \n
+Enter(k)\n  //in app
+
+    </string>
+
+    <string name="path2_question3">
+        Count =0;\n
+ If (you are under cctv surveillance ) { \n
+Find(stairs to ground) Run(2*speed); \n
+Count+=(step to ground) ;\n
+ }\n
+ A=Google( i have 2 hands on my face, you check me to keep your pace) Find (A) ; \n
+B=establishment of A; //years\n
+ While (! Portrait of a legend) Search(in all directions) ; \n
+Follow( "his vision") ; \n
+If (fence &amp;&amp; flag post) V=Find( robot) ; // search in all directions \n
+Reach (V) ;\n
+ If (facing V) Turn ("330 right");\n
+ Follow("trail of flowers") ;\n
+ Int n; \n
+n=B%10;\n
+ Switch(switch spotted on right) { \n
+Case bulb graffiti : Int K+=no of empty graffiti circles //13 \n
+Break;\n
+ Case two wheelers: Count+=no of wheels;\n
+ Break;\n
+ } \n
+S= "it all starts with a coffee" ;\n
+ Goto (S) ; \n
+Int d=k +n; \n
+        \n
+
+Enter d \n
+
+    </string>
+
+    <string name="path3_question3">
+        Find(Octopus);\n
+Find(string.reverse(\“gnikrapon\”));\n
+goto H2O_Cooler;\n
+goto Old_mechanical_Department;\n
+Find(Friendship_Board);\n
+if(in_front_of_long_way)\n
+	move_straight;\n
+else\n
+	turn_90_degree_left;\n
+
+int count_number_of_fire_ext=0;\n
+while(1)\n
+{\n
+	if(library_on_your_left)\n
+		break;\n
+	else\n
+		move_straight;\n
+	if(found_fire_ext)\n
+		count_number_of_fire_ext++;\n
+}\n
+
+x=count_number_of_fire_ext;\n
+\n
+x = 2*x + 2;\n
+flr=  pow(x,2) -10*x;\n
+\n
+pos=pow(   floor_value(sqrt(x) )  , 2);   //floor_value  = greatest integer function\n
+\n
+str=\"CODEKREIGERS\";   // str[0] = ‘C’\n
+\n
+place= str[pos-1]+ to_string(pos);\n
+\n
+goto place;\n
+\n
+if (don\'t know where to go) {\n
+// increase potential energy\n
+follow the stairs;  \n
+flr++; \n
+}\n
+\n
+where_to_go = (facing(place))? go_in_open: (face_place&amp;&amp;goto_previous_line);\n
+\n
+reward=0;\n
+do{\n
+		if(month_number==pos+1)\n
+			reward++;\n
+		if(facing_SmoothApptitudeCode)\n
+			reward++;\n
+		if(feeling_good)\n
+			reward++;\n
+		if(your_CGPA>=9)\n
+			reward++;\n
+		if(hostel_number==7)\n
+			reward++;\n
+		if(sch_number>98)\n
+			reward++;\n
+		if(don\'t_know_what_is_going_on)\n
+			reward=0;\n
+}while(0);\n
+goto place;\n
+\n
+SCAN QR CODE;\n
+
+Question:Input the value of x.\n
+
+    </string>
+
+    <string name="path1_question4">
+        A=robot ; \n
+ While(!found (A) ) \n
+{ \n
+            Walk(); \n
+} \n
+
+B= a wall that can see everything \n
+Goto B \n
+C= Green “M A N I T” \n
+If (found( C) ) \n
+Goto Medical clinic during admission \n
+If (found(Switch))  \n
+{ \n
+            stop(); \n
+} \n
+int k=0 \n
+k=count( no. of machine parts) \n
+
+Z = “Starbucks of MANIT”; \n
+walk.utillReach(Z); \n
+
+Enter(k)\n  //in app
+
+    </string>
+
+    <string name="path2_question4">
+        Count=0;\n
+ char A=left; \n
+Int k; \n
+Do { \n
+B= Face(ground where Gig was performed) ;\n
+ Walk fwd;\n
+ } While(! Hurdles) ;\n
+ if (hurdles ==visible) Count+=hurdles; Turn(A) ;\n
+ k= (\'a\' +20)%10 ; \n
+Walk fwd;\n
+ If(crossroads) Turn (A) ; \n
+While (A) {\n
+ While( free space on left == visible) { \n
+If(benches on left==visible &amp;&amp; no of benches==4)\n
+ Perimeter (bench ) ;\n
+ Else Walk fwd;\n
+ } \n
+Else Walk fwd;\n
+ } \n
+Printf ("To solve this little fix") ;\n
+ Goto( the place of some reaction) ;\n
+
+ \n
+Enter the value of k \n
+
+    </string>
+
+    <string name="path3_question4">
+        while(facing a centre of technology){\n
+if(dehydrated()){\n
+get_hydrated();\n
+}\n
+else{\n
+do{\n
+take right &amp;&amp; continue walking towards the above mentioned technology center ;\n
+}\n
+while((2 color flowers found on your left)||(Verandah on your left));\n
+}\n
+int z= number_of_marbel_benches;\n
+}\n
+search(a path ‘p2’ that tells you about togetherness  at MANIT)\n
+follow p2;\n
+if(floor==1)\n
+{\n
+floor--; //decrease potential energy\n
+turn(left) ;\n
+walk_straight(until you spot the name of a famous singer);\n
+continue walking;\n
+walk straight until you spot "G"+z/2;\n
+}\n
+\n
+Question: Print z.\n
+
+    </string>
+
+    <string name="path1_question5">
+        #open_your_compass_again \n
+walk(North,40 metres); \n
+if(search(“White Gate”)==true) stop; \n
+else continue walking; \n
+Enter(“White Gate”); \n
+Do \n
+{ \n
+walk straight \n
+}while(!reach(stairs)) \n
+
+int t=count(stair); \n
+int l=t; \n
+while(l--) \n
+{ \n
+      Start walking downwards; \n
+} \n
+Walk in the direction of the storehouse of knowledge; \n
+int a=b=0; \n
+while(walking) \n
+{ \n
+if(found(pillar))  \n
+a++; \n
+
+if(reached(crossroads)) \n
+break; \n
+} \n
+Walk in the direction opposite to the library and follow the tube lights overhead \n
+if(found(barricade)) \n
+stop(); \n
+turn (left); \n
+Enter(a)\n //in app
+
+    </string>
+
+    <string name="path2_question5">
+        if (facing chem lab) Turn left; WalkForward();\n
+ X=no of red buckets on left + 2*no of black bucket ; \n
+
+If (computer lab spotted on left)\n
+ Goto(computer lab) ; \n
+If facing lab Turn left ;\n
+ While(! waiting room) Walk fwd; \n
+Turn left; \n
+Keep walking ;\n
+ If (savita dixit== spotted) Turn right; \n
+If (crossroads &amp;&amp; facing department if ee lab) Turn left;\n
+ Walk fwd Stand on eeoat stage \n
+Find drummer.\n
+ Scan qr;\n\n
+Enter the value of x \n
+
+    </string>
+
+    <string name="path3_question5">
+        Int(\'A\') = 65 //ASCII\n
+while(!facing_GVI) turn 1 degree clockwise;\n
+\n
+turn(   int(\'Z\')degree clockwise);\n
+\n
+while(!on_road()) walk_towards_the_road;\n
+\n
+turn(int(\'Z\')degree clockwise);\n
+\n
+white_strips = 0;\n
+while(!barrier_reached())    //near nescafe \n
+{\n
+walk;\n
+if(visible(broken_white_road_divider)) ++white_strip;\n
+}\n
+\n
+goto char(65)+char(84)+char(77); // (ASCII Codes)\n
+\n
+while(location!=Nescafe) // Mario Forever\n
+{hop(); speed*=2;}\n
+\n
+if(facing(nescafe)) turn int(\'B\'+\'Z\'-66) degree clockwise;\n
+\n
+while(!ecountered(blue wall))\n
+{\n
+run();\n
+if(visible(broken_white_road_divider)) ++white_strips;\n
+}\n
+str = \"ANTI BONDING\"  //str[0] = ‘A’\n
+white_strips =floor (white_strips/10)  //floor  = Greatest Integer function\n
+goto str[1]+str[2]+str[5];\n
+\n
+
+Question: Print the number of white strips.\n
+
+    </string>
+
+    <string name="path1_question6">
+        int k=number(step-up transformers); \n
+int l=number(visible vehicles); \n
+int x=(--k)*l; \n
+Goto showcase of talent; \n
+Y = “Hunger”; \n
+C = “Place to destroy Y” \n
+While (! Found C) \n
+{ \n
+Walk(); \n
+} \n
+F = Count C; \n
+G = “Just greater than GB”; \n
+Goto N+G; \n
+        Enter x //in app
+
+    </string>
+
+    <string name="path2_question6">
+        if(facing portrait of train) Turn 9000 ; \n
+Search(yellow paths );\n
+ Stand on the yellow path;\n
+ WalkForward();\n
+ While(! Left turn) Walk fwd; \n
+Take sort(F,L,E,T);\n
+ If (biggest archive==visible) Turn (left) ;\n
+ While(!search(“PLANTATION”)) {\n
+ WalkForward();\n
+ }\n
+ Z=no of chairs in the plantation area;// WalkForward();\n
+ Cross the bridge;\n
+ Turn right;\n
+ K=Search(“AUDIO VISUAL ROOM”);// you are on the right trach \n
+
+Goto nearest water source; \n
+
+\n
+
+Enter the value of z  \n
+
+    </string>
+
+    <string name="path3_question6">
+        string s = \"TOBACCO KILLS\"
+        char c1 = s[0], c2 = s[2];
+        Goto(c1 + c2 + "212")\n
+        Enter \"Vision\" //in app\n
+    </string>
+
+    <string name="path2_question7">
+        If(facing water cooler) { \n
+Walk down the stairs; \n
+Turn Left; \n
+}\n
+ Search(The Beatles); \n
+
+faces = Count (human faces on wall below The Beatles) ;\n
+//don\'t count bollywood celeb\n
+        if(gate == closed)
+        find_a _way_to_reach_other_side_of_gate\n\n
+ Reach the main road; \n
+Turn right;\n
+ Walk fwd ;\n
+
+ Enter the second gate on left to enter the building ; \n
+        Enter faces //in app \n
+
+    </string>
+
+    <string name="path1_question7">
+        string s = \"TOBACCO KILLS\"
+        char c1 = s[0], c2 = s[2];
+        Goto(c1 + c2 + "212")\n
+        Enter \"Vision\" //in app\n
+    </string>
+
+    <string name="path2_question8">
+        string s = \"TOBACCO KILLS\"
+        char c1 = s[0], c2 = s[2];
+        Goto(c1 + c2 + "212")\n
+        Enter \"Vision\" //in app\n
+    </string>
+    <!-- Questions List End -->
 
 </resources>

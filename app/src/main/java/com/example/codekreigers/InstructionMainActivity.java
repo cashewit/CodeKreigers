@@ -1,5 +1,7 @@
 package com.example.codekreigers;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -38,7 +40,17 @@ public class InstructionMainActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                SharedPreferences loginPref = getSharedPreferences("loginPref",MODE_PRIVATE);
+                if(loginPref.getBoolean("myLoginBool",true)){
+                    SharedPreferences.Editor myEditor = loginPref.edit();
+                    myEditor.putBoolean("myLoginBool",false);
+                    myEditor.apply();
+                    Intent myIntent = new Intent(InstructionMainActivity.this,StartGame.class);
+                    startActivity(myIntent);
+                    finish();
+                }
+                else
+                    finish();
             }
         });
     }

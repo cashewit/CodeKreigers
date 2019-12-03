@@ -21,9 +21,9 @@ public class InstructionSliderAdapter extends PagerAdapter {
     }
     //Arrays
     public int[] slide_images={
-            R.drawable.paanda,
-            R.drawable.pandaa,
-            R.drawable.pandaaa
+            R.drawable.screenshot_1,
+            R.drawable.screenshot_2,
+            R.drawable.screenshot_3
     };
 
     public int[] slide_descs={R.string.slide1, R.string.slide2, R.string.slide3};

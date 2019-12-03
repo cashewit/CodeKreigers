@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
@@ -25,19 +26,38 @@
             android:id="@+id/nav_checkpoints"
             android:icon="@drawable/ic_checkpoints"
             android:title="@string/menu_checkpoint" />
+
     </group>
 
-    <item android:title=""/>
+
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_devs"
+            android:icon="@drawable/ic_developer_mode_black_24dp"
+            android:title="@string/menu_devs" />
+    </group>
+
+
+
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_devs"
-                android:icon="@drawable/ic_developer_mode_black_24dp"
-                android:title="@string/menu_devs" />
-            <item
-                android:id="@+id/nav_feedback"
-                android:icon="@drawable/ic_feedback_black_24dp"
-                android:title= "@string/menu_feedback" />
+            <item android:id="@+id/facebook"
+                android:icon="@drawable/ic_icons8_facebook"
+                android:title="Vision"/>
+
+            <item android:id="@+id/ckFacebook"
+                android:icon="@drawable/ic_icons8_facebook"
+                android:title="Code Kriegers"/>
+
+            <item android:id="@+id/website"
+                android:icon="@drawable/ic_web"
+                android:title="Website"/>
+
+            <item android:id="@+id/Email"
+                android:icon="@drawable/ic_mail_black_24dp"
+                android:title="Email"/>
+
         </menu>
     </item>
 

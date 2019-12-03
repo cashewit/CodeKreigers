@@ -1,11 +1,15 @@
 package com.example.codekreigers;
 
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -79,9 +83,51 @@ public class HomePage extends AppCompatActivity {
                         SharedPreferences loginPref = getSharedPreferences("loginPref",MODE_PRIVATE);
                         boolean myLoginBool = loginPref.getBoolean("myLoginBool",true);
 
+                        SharedPreferences gameOver = getSharedPreferences("gameOver",MODE_PRIVATE);
+                        boolean over = gameOver.getBoolean("gameOver",false);
+
+                        SharedPreferences Completed = getSharedPreferences("gameCompleted",MODE_PRIVATE);
+                        boolean completed = Completed.getBoolean("gameCompleted",false);
+
+                        final String MyPREFERENCES = "MyPrefs" ;
+                        int minutes,seconds,hours;
+                        SharedPreferences sharedpreferences;
+                        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+
+                        seconds=sharedpreferences.getInt("second",0);
+                        minutes=sharedpreferences.getInt("minute",0);
+                        hours=sharedpreferences.getInt("hour",0);
+
                         if(myLoginBool) {
                             Intent myIntent = new Intent(HomePage.this, LoginActivity.class);
                             startActivity(myIntent);
+                        }
+                        else if(over){
+                            AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
+                            builder.setTitle("Game Over!");
+                            builder.setCancelable(false);
+                            builder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            });
+                            AlertDialog alert = builder.create();
+                            alert.show();
+                        }
+                        else if(completed){
+                            AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
+                            builder.setTitle("Game Completed!");
+                            builder.setCancelable(false);
+                            builder.setMessage("Successfully completed game!\n Time taken: "+hours+":"+minutes+":"+seconds);
+                            builder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            });
+                            AlertDialog alert = builder.create();
+                            alert.show();
                         }
                         else{
                             Intent myIntent = new Intent(HomePage.this, StartGame.class);
@@ -97,13 +143,24 @@ public class HomePage extends AppCompatActivity {
                         break;
 
                     case R.id.nav_team:
-                        Toast.makeText(HomePage.this,"Team Vision Pressed!",Toast.LENGTH_SHORT).show();
+                        Intent myIntent_team = new Intent(HomePage.this,TeamVision.class);
+                        startActivity(myIntent_team);
                         mDrawerLayout.closeDrawer(Gravity.LEFT);
                         break;
 
                     case R.id.nav_checkpoints:
-                        Intent myIntent_checkpoints = new Intent(HomePage.this, CheckPoint.class);
-                        startActivity(myIntent_checkpoints);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
+                        builder.setView(R.layout.checkpoint_activity);
+                        builder.setCancelable(false);
+                        builder.setTitle("Checkpoints");
+                        builder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog checkpoints = builder.create();
+                        checkpoints.show();
                         mDrawerLayout.closeDrawer(Gravity.LEFT);
                         break;
 
@@ -113,10 +170,33 @@ public class HomePage extends AppCompatActivity {
                         mDrawerLayout.closeDrawer(Gravity.LEFT);
                         break;
 
-                    case R.id.nav_feedback:
-                        Toast.makeText(HomePage.this,"We don't care about your feedback!",Toast.LENGTH_SHORT).show();
-                        mDrawerLayout.closeDrawer(Gravity.LEFT);
+                    case R.id.website:
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+                        String url = "https://visionmanit.org";
+                        browserIntent.setData(Uri.parse(url));
+                        startActivity(browserIntent);
                         break;
+
+                    case R.id.ckFacebook:
+                        Intent browser2Intent = new Intent(Intent.ACTION_VIEW);
+                        String url2 = "https://www.facebook.com/codekriegers/";
+                        browser2Intent.setData(Uri.parse(url2));
+                        startActivity(browser2Intent);
+                        break;
+
+                    case R.id.facebook:
+                        Intent browser3Intent = new Intent(Intent.ACTION_VIEW);
+                        String url3 = "https://www.facebook.com/visionmanit/";
+                        browser3Intent.setData(Uri.parse(url3));
+                        startActivity(browser3Intent);
+                        break;
+
+                    case R.id.Email:
+                        String TO = "INFO@VISIONMANIT.ORG";
+                        Intent browser1Intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", TO,null));
+                        startActivity(Intent.createChooser(browser1Intent, "Choose an email client: "));
+                        break;
+
                 }
                 return false;
             }
